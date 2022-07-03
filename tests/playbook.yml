@@ -1,0 +1,65 @@
+---
+- name: Install xdg_mime_meta config
+  hosts: all
+  roles:
+    - xdg_mime_meta
+  vars:
+    xdg_mime_defaults:
+      - desktop_file: sxiv.desktop
+        mime_types:
+          - image/jpg
+          - image/jpeg
+          - image/pjpeg
+          - image/png
+          - image/tiff
+          - image/webp
+          - image/bmp
+          - image/gif
+      - desktop_file: mpv.desktop
+        mime_types:
+          - video/x-matroska
+          - video/mp4
+          - video/H264
+          - video/mpeg
+          - video/webm
+          - video/ogg
+          - video/avi
+      - desktop_file: zathura.desktop
+        mime_types:
+          - application/pdf
+          - application/postscript
+          - application/eps
+          - application/x-eps
+      - desktop_file: firefox.desktop
+        mime_types:
+          - text/html
+          - application/xhtml_xml
+          - application/x-mimearchive
+          - x-scheme-handler/http
+          - x-scheme-handler/https
+          - x-scheme-handler/ftp
+          - x-scheme-handler/chrome
+      - desktop_file: vim.desktop
+        mime_types:
+          - text/xml
+          - text/plain
+      - desktop_file: anki.desktop
+        mime_types:
+          - application/x-colpkg
+          - application/x-apkg
+          - application/x-ankiaddon
+      - desktop_file: thunderbird.desktop
+        mime_types:
+          - x-scheme-handler/mailto
+          - application/x-xpinstall
+      - desktop_file: pcmanfm.desktop
+        mime_types:
+          - inode/directory
+      - desktop_file: ncmpcpp.desktop
+        mime_types:
+          - audio/mpeg
+          - audio/ogg
+          - audio/opus
+          - audio/webm
+          - audio/wav
+          - audio/mpeg3
